@@ -1,175 +1,180 @@
 {
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "editor.fontSize": 14,
-    "editor.lineHeight": 24,
-    "editor.fontWeight": "500",
-    "editor.letterSpacing": 1.5,
-    "editor.fontFamily": "Victor Mono, Fira Code",
-    "editor.fontLigatures": true,
-    "editor.formatOnSave": true,
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "scope": "emphasis",
-                "settings": {
-                    "fontStyle": "italic",
-                    "foreground": "#ff5874"
-                }
-            },
-            {
-                "scope": "strong",
-                "settings": {
-                    "fontStyle": "bold"
-                }
-            },
-            {
-                "scope": "entity.other.attribute-name",
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "scope": "markup.underline",
-                "settings": {
-                    "fontStyle": "underline"
-                }
-            },
-            {
-                "scope": "markup.bold",
-                "settings": {
-                    "fontStyle": "bold"
-                }
-            },
-            {
-                "scope": "markup.heading",
-                "settings": {
-                    "fontStyle": "bold"
-                }
-            },
-            {
-                "scope": "markup.italic",
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "name": "String interpolation",
-                "scope": [
-                    "punctuation.definition.template-expression.begin",
-                    "punctuation.definition.template-expression.end",
-                    "punctuation.section.embedded"
-                ],
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "name": "this.self",
-                "scope": "variable.language",
-                "settings": {
-                    "fontStyle": "italic",
-                    "foreground": "#ff5874"
-                }
-            },
-            {
-                "name": "@Decorator",
-                "scope": [
-                    "meta.decorator punctuation.decorator"
-                ],
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "scope": [
-                    "punctuation.definition.comment",
-                    "comment"
-                ],
-                "settings": {
-                    // "foreground": "#ff5874",
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "scope": [
-                    //following will be in italic =FlottFlott
-                    "entity.name.type.class", //class names
-                    "keyword", //import, export, return…
-                    "constant", //String, Number, Boolean…, this, super
-                    "storage.modifier", //static keyword
-                    "storage.type",
-                    "storage.type.class.js", //class keyword
-                ],
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "scope": [
-                    //following will be excluded from italics VSCode has some defaults for italics
-                    "invalid",
-                    "keyword.operator",
-                    "constant.numeric.css",
-                    "keyword.other.unit.px.css",
-                    "constant.numeric.decimal.js",
-                    "constant.numeric.json"
-                ],
-                "settings": {
-                    "fontStyle": ""
-                }
-            }
-        ]
+    // "editor.fontFamily": "'Dank Mono', Menlo, Monaco, 'Courier New', monospace",
+    // "editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+    "editor.lightbulb.enabled": false,
+    "editor.fontLigatures": false,
+    "workbench.editor.wrapTabs": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    // "prettier.disableLanguages": [
+    //     "javascript",
+    //     "javascriptreact"
+    // ],
+    "editor.rulers": [
+        80
+    ],
+    "editor.snippetSuggestions": "top",
+    "editor.wordBasedSuggestions": false,
+    "editor.suggest.localityBonus": true,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "enitor.acceptSuggestionOnEnter": "off",
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
     },
     "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.suggestSelection": "recentlyUsed",
+        "editor.suggest.showKeywords": false,
+        "editor.formatOnSave": true,
     },
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.suggestSelection": "recentlyUsed",
+        "editor.suggest.showKeywords": false,
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
     },
-    "workbench.colorTheme": "SynthWave '84",
-    "synthwave84.brightness": "0.75",
-    "workbench.colorCustomizations": {
-        "[SynthWave '84]": {
-            "activityBar.activeBackground": "#181520",
-            "editor.background": "#181520",
-            "sideBar.background": "#181520"
+    "editor.fontSize": 14,
+    "editor.hover.enabled": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.folding": false,
+    "files.exclude": {
+        "USE_GITIGNORE": true
+    },
+    "files.associations": {
+        "*.md": "mdx"
+    },
+    "terminal.integrated.shellArgs.osx": ["-l"],
+    "terminal.integrated.scrollback": 10000,
+    "workbench.colorTheme": "Night Owl",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.startupEditor": "none",
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.perEditorGroup": false,
+    "workbench.editor.limit.value": 18,
+    "debug.javascript.codelens.npmScripts": "never",
+    "breadcrumbs.enabled": true,
+    "local-history.absolute": true,
+    "local-history.path": "/Users/kentcdodds/.vscode-history",
+    "grunt.autoDetect": "off",
+    "npm.runSilent": true,
+    "gulp.autoDetect": "off",
+    "explorer.confirmDragAndDrop": false,
+    "atomKeymap.promptV3Features": true,
+    // "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "editor.minimap.enabled": false,
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "plaintext",
+        "mdx"
+    ],
+    "spellright.parserByClass": {
+        "mdx": {
+            "parser": "markdown"
         }
     },
-    "diffEditor.ignoreTrimWhitespace": false,
-    "workbench.iconTheme": "vscode-icons",
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.smoothScrolling": true,
+    "php.suggest.basic": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
-    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
-    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-    "bookmarks.useWorkaroundForFormatters": true,
-    "prettier.useEditorConfig": false,
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[csharp]": {
-        "editor.defaultFormatter": "Leopotam.csharpfixformat"
-    },
-    "materialTheme.accent": "Remove accents",
-    "liveServer.settings.donotShowInfoMsg": true,
-    "prettier.htmlWhitespaceSensitivity": "strict",
+    "eslint.packageManager": "npm",
+    "npm.packageManager": "npm",
+    "prettier.bracketSpacing": false,
+    "prettier.proseWrap": "always",
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
     "prettier.trailingComma": "all",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "codestream.email": "duvanmorenocardona.dmc@gmail.com",
-    "zeplin.preferredApplicationType": "Web",
-    "git.enableSmartCommit": true,
-    "workbench.editor.wrapTabs": true,
-    "python.workspaceSymbols.enabled": true,
-    "workbench.editorAssociations": [
+    "prettier.arrowParens": "avoid",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": []
+    },
+    /* VIM CONFIG */
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
         {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
         }
     ],
-    "window.zoomLevel": 1,
-    "terminal.integrated.shell.linux": "bash",
-    "files.autoSave": "afterDelay"
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "after": [
+                "d",
+                "d"
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-w>": false,
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "files.autoSave": "afterDelay",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "editor.formatOnType": true,
+    "git.suggestSmartCommit": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "codestream.email": "duvanmorenocardona.dmc@gmail.com",
+    // "editor.cursorStyle": "line",
+    "editor.insertSpaces": false,
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "prettier.useEditorConfig": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "workbench.editor.untitled.hint": "hidden",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "bracketPairColorizer.forceIterationColorCycle": true,
+    "window.zoomLevel": 2,
+    "debug.allowBreakpointsEverywhere": true,
+    "debug.showBreakpointsInOverviewRuler": true,
+    "vim.digraphs": {
+    
+    },
+    "workbench.panel.defaultLocation": "left",
+    "editor.lineNumbers": "relative",
+    "liveServer.settings.donotVerifyTags": true
 }
